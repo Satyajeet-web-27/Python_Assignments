@@ -274,9 +274,12 @@ Output: Not Palindrome
 
 **Hint:**
 
-```python
-word == word[::-1]
-```
+<details>
+    <summary>
+        Hint:
+    </summary>
+    word == word[::-1]
+</details>
 
 ---
 
