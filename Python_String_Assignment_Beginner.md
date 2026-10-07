@@ -29,6 +29,16 @@ Enter your name: Polu
 Output: Hello Polu
 ```
 
+<details>
+<summary>Click here to view the solution: </summary>
+
+```python
+name = input('Enter your name: ');
+print(f'Hello {name}')
+```
+
+</details>
+
 ---
 
 ## 2. Find String Length
@@ -39,6 +49,16 @@ Take a name as input and display the number of characters.
 Input: Polu
 Output: Length = 4
 ```
+
+<details>
+<summary>Click here to view the solution: </summary>
+
+```python
+name  = input("Enter your name: ")
+print(f'Length: {len(name)}')
+```
+
+</details>
 
 ---
 
@@ -57,6 +77,18 @@ PYTHON IS EASY
 python is easy
 ```
 
+<details>
+<summary>Click here to view the solution: </summary>
+
+```python
+name = input("Write a sentence: ")
+
+print(name.upper())
+print(name.lower())
+```
+
+</details>
+
 ---
 
 ## 4. First and Last Character
@@ -74,6 +106,19 @@ First character: C
 Last character: r
 ```
 
+<details>
+<summary>Click here to view the solution: </summary>
+
+```python
+word = input('Enter a word: ')
+
+print(f'First character: {word[0]}')
+print(f'Last character: {word[-1]}')
+
+```
+
+</details>
+
 ---
 
 ## 5. Reverse a String
@@ -86,6 +131,16 @@ Output: nohtyP
 ```
 
 **Hint:** Use slicing.
+
+<details>
+<summary>Click here to view the solution: </summary>
+
+```python
+word = input("Enter a word: ")
+print(f'Reverse: {word[::-1]}')
+```
+
+</details>
 
 ---
 
@@ -272,13 +327,13 @@ Input: python
 Output: Not Palindrome
 ```
 
-**Hint:**
-
 <details>
-    <summary>
-        Hint:
-    </summary>
-    word == word[::-1]
+<summary><strong>Hint:</strong></summary>
+
+```text
+word = word[::-1]
+```
+
 </details>
 
 ---
@@ -385,3 +440,15 @@ I live in Hooghly.
 ### Mini Project
 
 **Student Introduction Program**
+
+<details>
+<summary>Click to view the Python code</summary>
+
+```python
+def greet(name):
+    print(f"Hello, {name}!")
+
+greet("World")
+```
+
+</details>
