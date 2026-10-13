@@ -81,10 +81,10 @@ python is easy
 <summary>Click here to view the solution: </summary>
 
 ```python
-name = input("Write a sentence: ")
+sentence = input("Write a sentence: ")
 
-print(name.upper())
-print(name.lower())
+print(sentence.upper())
+print(sentence.lower())
 ```
 
 </details>
@@ -110,10 +110,13 @@ Last character: r
 <summary>Click here to view the solution: </summary>
 
 ```python
-word = input('Enter a word: ')
+word = input("Enter a word: ")
 
-print(f'First character: {word[0]}')
-print(f'Last character: {word[-1]}')
+if len(word) > 0:
+    print(f"First character: {word[0]}")
+    print(f"Last character: {word[-1]}")
+else:
+    print("You entered an empty string.")
 
 ```
 
@@ -156,6 +159,19 @@ Input: "   Hello Python   "
 Output: "Hello Python"
 ```
 
+<details>
+<summary>Click here to view the solution: </summary>
+
+```python
+text = input("Enter text with extra spaces: ")
+clean_text = text.strip()
+
+print("Before:", repr(text))
+print("After:", repr(clean_text))
+```
+
+</details>
+
 ---
 
 ## 7. Replace a Word
@@ -169,6 +185,18 @@ I love Python.
 Output:
 I love Programming.
 ```
+
+<details>
+<summary>Click here to view the solution: </summary>
+
+```python
+sentence = input("Enter a sentence: ")
+new_sentence = sentence.replace("Python", "Programming")
+
+print(new_sentence)
+```
+
+</details>
 
 ---
 
@@ -184,6 +212,21 @@ Output:
 a appears 3 times
 ```
 
+<details>
+<summary>Click here to view the solution: </summary>
+
+```python
+text = input("Enter a string: ")
+character = input("Enter one character: ")
+
+if len(character) == 1:
+    print(character, "appears", text.count(character), "times")
+else:
+    print("Please enter exactly one character.")
+```
+
+</details>
+
 ---
 
 ## 9. Find a Word
@@ -197,6 +240,23 @@ Word: Python
 Output:
 Word found
 ```
+
+<details>
+<summary>Click here to view the solution: </summary>
+
+```python
+sentence = input("Enter a sentence: ")
+word = input("Enter a word to find: ")
+
+position = sentence.find(word)
+
+if position != -1:
+    print("Word found at index", position)
+else:
+    print("Word not found")
+```
+
+</details>
 
 ---
 
@@ -213,6 +273,25 @@ Take a word from the user and check:
 startswith()
 endswith()
 ```
+
+<details>
+<summary>Click here to view the solution: </summary>
+
+```python
+word = input("Enter a word: ")
+
+if word.startswith("A"):
+    print('The word starts with "A".')
+else:
+    print('The word does not start with "A".')
+
+if word.endswith("ing"):
+    print('The word ends with "ing".')
+else:
+    print('The word does not end with "ing".')
+```
+
+</details>
 
 ---
 
